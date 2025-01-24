@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Guessing Number</h1>
+    <button onclick="guessingnumber()">click for prompt</button>
+</body>
+<script>
+    function guessingnumber()
+    {
+        const randomnumber=Math.floor(Math.random()*100)+1
+        let guess;
+        let attempt=0;
+        do{
+            guess=prompt("Guess the number between ")
+            guess=Number(guess)
+            if(guess>randomnumber)
+        {
+            console.log("Guess is high");
+            attempt++;
+        }
+        else if(guess<randomnumber)
+        {
+            console.log("Guess is lox");
+            attempt++;
+        }
+        else{
+            console.log("Matching");
+        }
+        }while(guess!=randomnumber)
+    }
+</script>
+</html>
