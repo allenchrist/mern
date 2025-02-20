@@ -7,8 +7,6 @@ function handlelogin()
 
 const logindata=[{username:"cristiano",password:"pass123"},
                   {username:"virat",password:"123pass"},
-                  {username:"username",password:"password"},
-
 ]
 
 const isValid=logindata.some((user)=>
